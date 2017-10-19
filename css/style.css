@@ -1,0 +1,33 @@
+html, body {
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+	box-sizing: border-box;
+	/*color: white;
+	background-color: rgb(138, 43, 226);*/
+}
+
+.main {
+  position: relative;
+  left: 40%;
+  top: 30%;
+  /*background-color: blue;*/
+}
+
+.result-box {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 150px;
+}
+
+#result-display {
+  text-align: right;
+}
+
+#calculation-display {
+  text-align: right;
+}
