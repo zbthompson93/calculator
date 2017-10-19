@@ -35,83 +35,84 @@ const DELETE = document.querySelector("#delete");
 // Display variables
 var action;
 var answer = "";
+var equation;
 var result;
 
 // Number Button Functions
 function zeroKey() {
-  document.querySelector("#result-display").innerHTML = "0";
   zero = "0";
   answer = answer + zero;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function oneKey() {
-  document.querySelector("#result-display").innerHTML = "1";
   one = "1";
   answer = answer + one;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function twoKey() {
-  document.querySelector("#result-display").innerHTML = "2";
   two = "2";
   answer = answer + two;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function threeKey() {
-  document.querySelector("#result-display").innerHTML = "3";
   three = "3";
   answer = answer + three;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function fourKey() {
-  document.querySelector("#result-display").innerHTML = "4";
   four = "4";
   answer = answer + four;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function fiveKey() {
-  document.querySelector("#result-display").innerHTML = "5";
   five = "5";
   answer = answer + five;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function sixKey() {
-  document.querySelector("#result-display").innerHTML = "6";
   six = "6";
   answer = answer + six;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function sevenKey() {
-  document.querySelector("#result-display").innerHTML = "7";
   seven = "7";
   answer = answer + seven;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function eightKey() {
-  document.querySelector("#result-display").innerHTML = "8";
   eight = "8";
   answer = answer + eight;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function nineKey() {
-  document.querySelector("#result-display").innerHTML = "9";
   nine = "9";
   answer = answer + nine;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
 function decimalKey() {
-  document.querySelector("#result-display").innerHTML = ".";
   decimal = ".";
   answer = answer + decimal;
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
@@ -147,8 +148,9 @@ function divideKey() {
 function equalKey() {
   result = eval(answer);
   document.querySelector("#result-display").innerHTML = result;
-  answer = answer + "=" + result;
-  document.querySelector("#calculation-display").innerHTML = answer;
+  equation = answer + "=" + result;
+  document.querySelector("#calculation-display").innerHTML = equation;
+  answer = result;
 }
 
 // Clear and Delete Functions
@@ -163,7 +165,7 @@ function clearKey() {
 function deleteKey() {
   var length = answer.length - 1;
   answer = answer.slice(0, length);
-  document.querySelector("#result-display").innerHTML = "0";
+  document.querySelector("#result-display").innerHTML = answer;
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
