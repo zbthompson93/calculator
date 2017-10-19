@@ -39,6 +39,7 @@ var equation;
 var result;
 
 // Number Button Functions
+// Defines the zero variable and adds it to the answer string. Then displays the answer string.
 function zeroKey() {
   zero = "0";
   answer = answer + zero;
@@ -46,6 +47,7 @@ function zeroKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the one variable and adds it to the answer string. Then displays the answer string.
 function oneKey() {
   one = "1";
   answer = answer + one;
@@ -53,6 +55,7 @@ function oneKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the two variable and adds it to the answer string. Then displays the answer string.
 function twoKey() {
   two = "2";
   answer = answer + two;
@@ -60,6 +63,7 @@ function twoKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the three variable and adds it to the answer string. Then displays the answer string.
 function threeKey() {
   three = "3";
   answer = answer + three;
@@ -67,6 +71,7 @@ function threeKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the four variable and adds it to the answer string. Then displays the answer string.
 function fourKey() {
   four = "4";
   answer = answer + four;
@@ -74,6 +79,7 @@ function fourKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the five variable and adds it to the answer string. Then displays the answer string.
 function fiveKey() {
   five = "5";
   answer = answer + five;
@@ -81,6 +87,7 @@ function fiveKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the six variable and adds it to the answer string. Then displays the answer string.
 function sixKey() {
   six = "6";
   answer = answer + six;
@@ -88,6 +95,7 @@ function sixKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the seven variable and adds it to the answer string. Then displays the answer string.
 function sevenKey() {
   seven = "7";
   answer = answer + seven;
@@ -95,6 +103,7 @@ function sevenKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the eight variable and adds it to the answer string. Then displays the answer string.
 function eightKey() {
   eight = "8";
   answer = answer + eight;
@@ -102,6 +111,7 @@ function eightKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the nine variable and adds it to the answer string. Then displays the answer string.
 function nineKey() {
   nine = "9";
   answer = answer + nine;
@@ -109,6 +119,7 @@ function nineKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Defines the decimal variable and adds it to the answer string. Then displays the answer string.
 function decimalKey() {
   decimal = ".";
   answer = answer + decimal;
@@ -117,6 +128,7 @@ function decimalKey() {
 }
 
 // Action Button Functions
+// Adds an adding symbol to the answer string and displays in in the calculation box
 function addKey() {
   //document.querySelector("#result-display").innerHTML = "+";
   action = "+";
@@ -124,6 +136,7 @@ function addKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Adds a subtracting symbol to the answer string and displays in in the calculation box
 function subtractKey() {
   //document.querySelector("#result-display").innerHTML = "-";
   action = "-";
@@ -131,6 +144,7 @@ function subtractKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Adds a multiplying symbol to the answer string and displays in in the calculation box
 function multiplyKey() {
   //document.querySelector("#result-display").innerHTML = "*";
   action = "*";
@@ -138,6 +152,7 @@ function multiplyKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Adds a dividing symbol to the answer string and displays in in the calculation box
 function divideKey() {
   //document.querySelector("#result-display").innerHTML = "/";
   action = "/";
@@ -145,6 +160,7 @@ function divideKey() {
   document.querySelector("#calculation-display").innerHTML = answer;
 }
 
+// Uses the eval() function to evaluate the answer string as an equation. Then displays the answer in the result/calculation box
 function equalKey() {
   result = eval(answer);
   document.querySelector("#result-display").innerHTML = result;
@@ -154,6 +170,7 @@ function equalKey() {
 }
 
 // Clear and Delete Functions
+// Resets answer, action, and result to zero
 function clearKey() {
   document.querySelector("#result-display").innerHTML = "0";
   document.querySelector("#calculation-display").innerHTML = "0";
@@ -162,6 +179,7 @@ function clearKey() {
   result;
 }
 
+// Deletes the last item in the answer string and returns the new answer
 function deleteKey() {
   var length = answer.length - 1;
   answer = answer.slice(0, length);
