@@ -6,22 +6,39 @@ html, body {
 
 body {
 	box-sizing: border-box;
-	/*color: white;
-	background-color: rgb(138, 43, 226);*/
+	/*color: white;*/
+	background-color: #00004d;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  color: white;
 }
 
 .main {
   position: relative;
   left: 40%;
-  top: 30%;
-  /*background-color: blue;*/
+  top: 15%;
+  background-color: #bfbfbf;
+  width: 234px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
 }
 
 .result-box {
   border-style: solid;
   border-color: black;
   border-width: 2px;
-  width: 150px;
+  border-radius: 4px;
+  width: 212px;
+  margin: 8px;
+  /*background-color: #ffbf00;*/
+  background-color: #666666;
+  color: #ff8000;
+  padding: 0px 4px 0px 0px;
 }
 
 #result-display {
@@ -30,4 +47,67 @@ body {
 
 #calculation-display {
   text-align: right;
+}
+
+#top-row {
+  margin: 8px;
+}
+
+#second-row {
+  margin: 8px;
+}
+
+#third-row {
+  margin: 8px;
+}
+
+#fourth-row {
+  margin: 8px;
+}
+
+#fifth-row {
+  margin: 8px;
+}
+
+.buttons {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: #ff8000;
+}
+
+.buttons:hover {
+  background-color: #ff8000;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.long {
+  width: 77px;
+  height: 50px;
+  background-color: #ff8000;
+}
+
+.long:hover {
+  background-color: black;
+  color: #ff8000;
+  border-style: solid;
+  border-color: #ff8000;
+  border-width: 2px;
+}
+
+#equal {
+  width: 104px;
+  height: 50px;
+  background-color: #ff8000;
+}
+
+#equal:hover {
+  background-color: black;
+  color: #ff8000;
+  border-style: solid;
+  border-color: #ff8000;
+  border-width: 2px;
 }
