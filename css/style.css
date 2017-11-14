@@ -28,6 +28,30 @@ body {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 450px) {
+  .main {left: 22%;}
+}
+
+@media only screen and (min-width: 451px) {
+  .main {left: 30%;}
+}
+
+@media only screen and (min-width: 640px) {
+  .main {left: 33%;}
+}
+
+@media only screen and (min-width: 750px) {
+  .main {left: 35%;}
+}
+
+@media only screen and (min-width: 950px) {
+  .main {left: 37%;}
+}
+
+@media only screen and (min-width: 1100px) {
+  .main {left: 40%;}
+}
+
 .result-box {
   border-style: solid;
   border-color: black;
